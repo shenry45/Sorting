@@ -20,10 +20,24 @@ def selection_sort( arr ):
     return arr
 
 
+def bubble_sort( arr ):
+    element_swap_in_pass = True
 
-# def bubble_sort( arr ):
+    while (element_swap_in_pass == True):
+        swap_counter = 0
 
-#     return arr
+        # loop through arr
+        for i in range(0, len(arr) - 1):
+            if (arr[i] > arr[i + 1]):
+                value_holder = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i + 1] = value_holder
+                swap_counter = swap_counter + 1
+
+        if (swap_counter == 0):
+            element_swap_in_pass = False
+
+    return arr
 
 
 # STRETCH: implement the Count Sort function below

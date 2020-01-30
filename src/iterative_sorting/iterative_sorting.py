@@ -75,11 +75,11 @@ def count_sort( arr, maximum=-1 ):
                 multiples_arr.append(i)
 
             sorted_arr += multiples_arr
-            
-        print(sorted_arr)
 
         return sorted_arr
+
     elif array_has_zero_negative_numbers() == False:
         return 'Error, negative numbers not allowed in Count Sort'
+        
     else:
         return []

@@ -5,6 +5,7 @@ from iterative_sorting import *
 class IterativeSortingTest(unittest.TestCase):
     def test_selection_sort(self):
         arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+        # arr1 = [0, 5, 8, 4, 2, 9, 6, 1, 3, 7]
         arr2 = []
         arr3 = [0, 1, 2, 3, 4, 5]
         arr4 = random.sample(range(200), 50)

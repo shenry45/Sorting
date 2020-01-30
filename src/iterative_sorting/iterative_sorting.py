@@ -47,9 +47,7 @@ def count_sort( arr, maximum=-1 ):
 
     def array_has_zero_negative_numbers():
         for i in range(0, len(arr)):
-            search = re.search('^\-', f'{arr[i]}')
-
-            if (search is not None):
+            if (arr[i] < 0):
                 return False
 
         return True
